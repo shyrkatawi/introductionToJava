@@ -7,35 +7,32 @@ import java.util.Arrays;
  * Крайние пробелы в строке удалить.
  */
 public class Task5 {
-    public static void main(String[] args) {
-    }
-
     static String removeExtraSpacesInString(String str) {
-        char[] tmpArray = new char[str.length()];
+        char[] array = new char[str.length()];
         char space = 32;
         boolean isSpace = true;
-        int tmpIndex = 0;
+        int index = 0;
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
             if (c == space) {
                 if (!isSpace) {
                     isSpace = true;
-                    tmpArray[tmpIndex] = c;
-                    tmpIndex++;
+                    array[index] = c;
+                    index++;
                 }
             } else {
                 isSpace = false;
-                tmpArray[tmpIndex] = c;
-                tmpIndex++;
+                array[index] = c;
+                index++;
             }
         }
 
 //        delete the last space if it exists
-        if (tmpIndex > 0) {
-            if (tmpArray[tmpIndex - 1] == space) {
-                tmpIndex--;
+        if (index > 0) {
+            if (array[index - 1] == space) {
+                index--;
             }
         }
-        return String.valueOf(Arrays.copyOf(tmpArray, tmpIndex));
+        return String.valueOf(Arrays.copyOf(array, index));
     }
 }

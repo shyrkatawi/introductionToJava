@@ -9,11 +9,11 @@ class Task4Test {
 
     @Test
     void genNumberOfNumbersInString() {
-        Assert.assertEquals(0,Task4.genNumberOfNumbersInString(""));
-        Assert.assertEquals(0,Task4.genNumberOfNumbersInString("qwe"));
-        Assert.assertEquals(1,Task4.genNumberOfNumbersInString("a1"));
-        Assert.assertEquals(1,Task4.genNumberOfNumbersInString("132a"));
-        Assert.assertEquals(1,Task4.genNumberOfNumbersInString("301"));
-        Assert.assertEquals(4,Task4.genNumberOfNumbersInString("1 10 165a14"));
+        Assert.assertEquals(0, Task4.genNumberOfNumbersInString(""));
+        Assert.assertEquals(0, Task4.genNumberOfNumbersInString("qwe"));
+        Assert.assertEquals(1, Task4.genNumberOfNumbersInString("a1"));
+        Assert.assertEquals(1, Task4.genNumberOfNumbersInString("132a"));
+        Assert.assertEquals(1, Task4.genNumberOfNumbersInString("301"));
+        Assert.assertEquals(4, Task4.genNumberOfNumbersInString("1 10 165a14"));
     }
 }

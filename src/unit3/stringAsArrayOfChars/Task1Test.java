@@ -9,8 +9,8 @@ class Task1Test {
     void fromCamelToSnakeCase_strLengthIsZero() {
         Assert.assertEquals("", Task1.fromCamelToSnakeCase(""));
     }
-    @Test
 
+    @Test
     void fromCamelToSnakeCase_strLengthIsOne() {
         Assert.assertEquals("a", Task1.fromCamelToSnakeCase("a"));
         Assert.assertEquals("Z", Task1.fromCamelToSnakeCase("Z"));
