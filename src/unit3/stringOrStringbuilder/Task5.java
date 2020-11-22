@@ -1,16 +1,16 @@
 package unit3.stringOrStringbuilder;
 
-import unit3.MethodsUnit3;
-
 /**
  * 5. Подсчитать, сколько раз среди символов заданной строки встречается буква “а”.
  */
 public class Task5 {
     static int getNumberOfCharSelectedChar(char c, String str) {
+        if (str.length() == 0) {
+            return 0;
+        }
         int number = 0;
-        char[] chars = MethodsUnit3.toCharArray(str);
-        for (char charFromStr : chars) {
-            if (c == charFromStr) {
+        for (int i = 0; i < str.length(); i++) {
+            if (c == str.charAt(i)) {
                 number++;
             }
         }

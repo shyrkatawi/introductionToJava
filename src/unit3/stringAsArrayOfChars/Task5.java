@@ -8,6 +8,9 @@ import java.util.Arrays;
  */
 public class Task5 {
     static String removeExtraSpacesInString(String str) {
+        if (str.length() == 0) {
+            return str;
+        }
         char[] array = new char[str.length()];
         char space = 32;
         boolean isSpace = true;

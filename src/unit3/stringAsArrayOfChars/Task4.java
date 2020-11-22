@@ -7,6 +7,9 @@ import unit3.MethodsUnit3;
  */
 public class Task4 {
     static int genNumberOfNumbersInString(String str) {
+        if (str.length() == 0) {
+            return 0;
+        }
         int result = 0;
         boolean isNumber = false;
         for (int i = 0; i < str.length(); i++) {
