@@ -10,9 +10,15 @@ public class Task10 {
         if (str.length() == 0) {
             return 0;
         }
-        return str
-                .replaceAll("( )+", "")
-                .split("[.!?]+")
-                .length;
+        int count = 0;
+        str = str.replaceAll("[,]+","");
+        String[] sentences = str.split("[.!?]+");
+        for (String s : sentences) {
+            s = s.trim();
+            if (s.length() != 0) {
+                count++;
+            }
+        }
+        return count;
     }
 }
