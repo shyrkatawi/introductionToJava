@@ -13,9 +13,3 @@ public class Task1 {
         return ((a - 3) * b / 2) + c;
     }
 }
-//    public static void main(String[] args) {
-//        System.out.println();
-//        System.out.println(task1(-1,-2,-3));
-//        System.out.println(task1(0,0,0));
-//    }
-//

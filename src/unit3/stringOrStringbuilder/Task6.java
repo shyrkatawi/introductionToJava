@@ -6,17 +6,14 @@ package unit3.stringOrStringbuilder;
  */
 public class Task6 {
     static String addAfterEveryCharCopyOfChar(String str) {
-        if(str.length()==0){
+        if (str.length() == 0) {
             return str;
         }
-        char[] array = new char[str.length() * 2];
-        int index = 0;
-        for (int i = 0; i < str.length(); i++) {
-            array[index] = str.charAt(i);
-            index++;
-            array[index] = str.charAt(i);
-            index++;
+        StringBuilder sb = new StringBuilder(str.length() * 2);
+        for (char c : str.toCharArray()) {
+            sb.append(c);
+            sb.append(c);
         }
-        return String.valueOf(array);
+        return sb.toString();
     }
 }

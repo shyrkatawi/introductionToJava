@@ -19,7 +19,6 @@ public class Task1 {
         } else {
             System.out.println("The triangle does not exist");
         }
-
     }
 
     static boolean isTriangleExist(int angle1, int angle2) {

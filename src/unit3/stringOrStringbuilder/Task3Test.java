@@ -21,6 +21,8 @@ class Task3Test {
         Assert.assertFalse(Task3.isPalindrome("a"));
         Assert.assertFalse(Task3.isPalindrome(""));
 
+        Assert.assertFalse(Task3.isPalindrome("aaAw"));
+
 
     }
 }

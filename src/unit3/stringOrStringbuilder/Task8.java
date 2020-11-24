@@ -8,14 +8,13 @@ package unit3.stringOrStringbuilder;
 public class Task8 {
     /**
      * If there are several words with the maximum length, returns the first one
-     * */
+     */
     static String getLongestWord(String str) {
         if (str.length() == 0) {
             return str;
         }
         String longestWord = "";
-        String [] words = str.split("( )+");
-        for (String word : words) {
+        for (String word : str.split("( )+")) {
             if (word.length() > longestWord.length()) {
                 longestWord = word;
             }

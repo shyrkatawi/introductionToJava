@@ -15,9 +15,4 @@ public class Task4 {
         int afterDot = (int) (r % 1 * 1000);
         return afterDot + beforeDot;
     }
-
-//    static double task4(double r) {
-//        String[] strings = String.valueOf(r).split("\\.");
-//        return Double.parseDouble(strings[1]+"."+strings[0]);
-//    }
 }
