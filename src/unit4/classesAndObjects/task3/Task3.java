@@ -1,6 +1,5 @@
-package unit4.classesAndObjects;
+package unit4.classesAndObjects.task3;
 
-import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -14,7 +13,7 @@ public class Task3 {
         Student[] students = createRandomStudents(10);
         for (Student st : students) {
             if (st.isPerformanceMoreThanNine()) {
-                System.out.printf("Student with good performance: %s, %s\n",st.getSurname(),st.groupId);
+                System.out.printf("Student with good performance: %s, %s\n",st.getSurname(),st.getGroupId());
             }
         }
     }
@@ -26,7 +25,7 @@ public class Task3 {
             String initials = "A.A" + i;
             String groupId = "group" + i;
             int[] performance = createRandomPerformance(5);
-            students[i] = new Task3().new Student(surname, initials, groupId, performance);
+            students[i] = new Student(surname, initials, groupId, performance);
         }
         return students;
     }
@@ -37,46 +36,5 @@ public class Task3 {
             performance[i] = new Random().nextInt(10) + 1;
         }
         return performance;
-    }
-
-    class Student {
-        private String surname;
-        private String initials;
-        private String groupId;
-        private int[] performance;
-
-        public Student(String surname, String initials, String groupId, int[] performance) {
-            this.surname = surname;
-            this.initials = initials;
-            this.groupId = groupId;
-            this.performance = performance;
-        }
-
-        public String getSurname() {
-            return surname;
-        }
-
-        public String getGroupId() {
-            return groupId;
-        }
-
-        boolean isPerformanceMoreThanNine() {
-            for (int i : performance) {
-                if (i < 9) {
-                    return false;
-                }
-            }
-            return true;
-        }
-
-        @Override
-        public String toString() {
-            return "Student{" +
-                    "surname='" + surname + '\'' +
-                    ", initials='" + initials + '\'' +
-                    ", groupId='" + groupId + '\'' +
-                    ", performance=" + Arrays.toString(performance) +
-                    '}';
-        }
     }
 }
