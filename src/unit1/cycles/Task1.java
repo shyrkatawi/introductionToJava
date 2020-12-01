@@ -7,7 +7,7 @@ import java.util.Scanner;
  * 1. Напишите программу, где пользователь вводит любое целое положительное число,
  * а программа суммирует все числа от 1 до введенного пользователем числа.
  */
-public class Task1 {
+class Task1 {
     public static void main(String[] args) {
         int n = getIntegerFromUser();
         if (n != -1) {

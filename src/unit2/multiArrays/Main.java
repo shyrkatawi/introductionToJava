@@ -27,7 +27,7 @@ public class Main {
 //        Task13.task13(createMatrix(5, 5, 9));
 //        Task14.task14(5);
 //        Task15.task15(createMatrix(8, 7, 9));
-        Task16.task16(6);
+//        Task16.task16(6);
 
     }
 
@@ -76,4 +76,13 @@ public class Main {
         }
         System.out.println();
     }
+
+//    public static void print(int matrix[][]) {
+//        for (int i = 0; i < matrix.length; i++) {
+//            for (int j = 0; j < matrix.length; j++) {
+//                System.out.print(matrix[i][j] + "\t");
+//            }
+//            System.out.println();
+//        }
+//    }
 }

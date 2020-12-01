@@ -9,7 +9,7 @@ import java.util.Arrays;
 /**
  * 1. Дан массив названий переменных в camelCase. Преобразовать названия в snake_case.
  */
-public class Task1 {
+class Task1 {
     static String[] task1(String[] array) {
         String[] resultArray = new String[array.length];
         for (int i = 0; i < resultArray.length; i++) {

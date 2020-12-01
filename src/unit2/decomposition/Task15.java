@@ -1,6 +1,6 @@
 package unit2.decomposition;
 
-public class Task15 {
+class Task15 {
     //15. Найти все натуральные n-значные числа, цифры в которых образуют строго возрастающую последовательность (например, 1234, 5789).
     //Для решения задачи использовать декомпозицию.
     static void task15(int... array) {
@@ -12,7 +12,7 @@ public class Task15 {
         }
     }
 
-    private static boolean isIncreasingSequence(int i) {
+    static boolean isIncreasingSequence(int i) {
         boolean result = true;
         int max = 10;
         while (i > 0) {

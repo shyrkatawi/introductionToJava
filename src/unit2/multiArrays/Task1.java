@@ -1,6 +1,6 @@
 package unit2.multiArrays;
 
-public class Task1 {
+class Task1 {
     //    1. Дана матрица. Вывести на экран все нечетные столбцы, у которых первый элемент больше последнего.
     static void task1(int[][] matrix) {
         Main.showMatrix(matrix);

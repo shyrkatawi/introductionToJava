@@ -4,7 +4,7 @@ package unit1.branching;
  * 1. Даны два угла треугольника (в градусах).
  * Определить, существует ли такой треугольник, и если да, то будет ли он прямоугольным.
  */
-public class Task1 {
+class Task1 {
     public static void main(String[] args) {
         int angle1 = 80;
         int angle2 = 90;

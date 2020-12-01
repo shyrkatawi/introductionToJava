@@ -1,6 +1,6 @@
 package unit2.decomposition;
 
-public class Task14 {
+class Task14 {
     //14. Натуральное число, в записи которого n цифр, называется числом Армстронга, если сумма его цифр, возведенная в степень n, равна самому числу.
     //Найти все числа Армстронга от 1 до k. Для решения задачи использовать декомпозицию.
     static void task14(int k) {
@@ -21,7 +21,7 @@ public class Task14 {
         }
     }
 
-    private static int getAmountOfDigits(int n) {
+    static int getAmountOfDigits(int n) {
         int amount = 0;
         if (n < 10) {
             amount++;

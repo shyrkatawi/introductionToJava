@@ -5,7 +5,7 @@ package unit1.linearPrograms;
  * true, если точка с координатами (х, у) принадлежит закрашенной области,
  * false — в противном случае.
  */
-public class Task6 {
+class Task6 {
     public static void main(String[] args) {
         boolean result = task6(4, -3);
         System.out.println(result);

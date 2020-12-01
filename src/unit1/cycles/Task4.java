@@ -5,7 +5,7 @@ import java.math.BigInteger;
 /**
  * 4. Составить программу нахождения произведения квадратов первых двухсот чисел.
  */
-public class Task4 {
+class Task4 {
     public static void main(String[] args) {
         BigInteger result = task4();
         System.out.println(result);

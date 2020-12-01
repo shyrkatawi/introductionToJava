@@ -1,6 +1,6 @@
 package unit2.decomposition;
 
-public class Task17 {
+class Task17 {
     //17. Из заданного числа вычли сумму его цифр. Из результата вновь вычли сумму его цифр и т.д.
     //Сколько таких действий надо произвести, чтобы получился нуль?
     //Для решения задачи использовать декомпозицию.
@@ -15,7 +15,7 @@ public class Task17 {
         System.out.println(subtractionCounter);
     }
 
-    private static int getSumFromNumberDigits(int number) {
+    static int getSumFromNumberDigits(int number) {
         int sum = 0;
         while (number > 0) {
             int digit = number % 10;

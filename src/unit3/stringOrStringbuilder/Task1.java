@@ -3,7 +3,7 @@ package unit3.stringOrStringbuilder;
 /**
  * 1. Дан текст (строка). Найдите наибольшее количество подряд идущих пробелов в нем.
  */
-public class Task1 {
+class Task1 {
     static int getMaxNumberOfConsecutiveSpaces(String str) {
         if (str.length() == 0) {
             return 0;

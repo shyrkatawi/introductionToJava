@@ -1,6 +1,6 @@
 package unit2.sorting;
 
-public class Task1 {
+class Task1 {
     //1. Заданы два одномерных массива с различным количеством элементов и натуральное число k.
     //Объединить их в один массив, включив второй массив между k-м и (k+1) - м элементами первого, при этом не используя дополнительный массив.
     static void task1(int[] firstArray, int[] secondArray, int insertPosition) {

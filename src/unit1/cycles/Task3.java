@@ -3,7 +3,7 @@ package unit1.cycles;
 /**
  * 3. Найти сумму квадратов первых ста чисел.
  */
-public class Task3 {
+class Task3 {
     public static void main(String[] args) {
         int result = task3();
         System.out.println(result);

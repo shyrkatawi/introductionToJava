@@ -1,6 +1,5 @@
 package unit3.stringOrStringbuilder;
 
-import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,19 +8,19 @@ class Task3Test {
 
     @Test
     void isPalindrome() {
-        Assert.assertTrue(Task3.isPalindrome("aa"));
-        Assert.assertTrue(Task3.isPalindrome("Aa"));
-        Assert.assertTrue(Task3.isPalindrome("aA"));
-        Assert.assertTrue(Task3.isPalindrome("cabbBBaC"));
-        Assert.assertTrue(Task3.isPalindrome("aaAaa"));
-        Assert.assertTrue(Task3.isPalindrome("abccba"));
+        assertTrue(Task3.isPalindrome("aa"));
+        assertTrue(Task3.isPalindrome("Aa"));
+        assertTrue(Task3.isPalindrome("aA"));
+        assertTrue(Task3.isPalindrome("cabbBBaC"));
+        assertTrue(Task3.isPalindrome("aaAaa"));
+        assertTrue(Task3.isPalindrome("abccba"));
 
-        Assert.assertFalse(Task3.isPalindrome("aB"));
-        Assert.assertFalse(Task3.isPalindrome("ba"));
-        Assert.assertFalse(Task3.isPalindrome("a"));
-        Assert.assertFalse(Task3.isPalindrome(""));
+        assertFalse(Task3.isPalindrome("aB"));
+        assertFalse(Task3.isPalindrome("ba"));
+        assertFalse(Task3.isPalindrome("a"));
+        assertFalse(Task3.isPalindrome(""));
 
-        Assert.assertFalse(Task3.isPalindrome("aaAw"));
+        assertFalse(Task3.isPalindrome("aaAw"));
 
 
     }

@@ -4,7 +4,7 @@ package unit1.cycles;
  * 5. Даны числовой ряд и некоторое число е.
  * Найти сумму тех членов ряда, модуль которых больше или равен заданному е.
  */
-public class Task5 {
+class Task5 {
     public static void main(String[] args) {
         double result = task5(5, 7);
         System.out.println(result);

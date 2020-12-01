@@ -3,7 +3,7 @@ package unit1.branching;
 /**
  * 2. Найти max{min(a, b), min(c, d)}.
  */
-public class Task2 {
+class Task2 {
     public static void main(String[] args) {
         int result = task2(1, 2, 3, 4);
         System.out.println(result);

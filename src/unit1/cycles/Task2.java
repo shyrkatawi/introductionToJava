@@ -5,7 +5,7 @@ package unit1.cycles;
  * if x>2 then y = x,
  * else y = -x,
  */
-public class Task2 {
+class Task2 {
     public static void main(String[] args) {
         int[][] result = task2(1, 9, 8);
         for (int[] array : result) {

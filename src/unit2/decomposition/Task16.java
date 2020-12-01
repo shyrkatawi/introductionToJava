@@ -1,6 +1,6 @@
 package unit2.decomposition;
 
-public class Task16 {
+class Task16 {
     //16. Написать программу, определяющую сумму n - значных чисел, содержащих только нечетные цифры.
     //Определить также, сколько четных цифр в найденной сумме.
     //Для решения задачи использовать декомпозицию.
@@ -16,11 +16,11 @@ public class Task16 {
         System.out.printf("Количество чётных цифр в найденной сумме: %d\n",getAmountOfEvenDigits(sum));
     }
 
-    private static boolean isEven(int i) {
+    static boolean isEven(int i) {
         return i % 2 == 0;
     }
 
-    private static int getAmountOfEvenDigits(int i) {
+    static int getAmountOfEvenDigits(int i) {
         int amount = 0;
         if (i == 0) {
             amount++;
@@ -36,7 +36,7 @@ public class Task16 {
         return amount;
     }
 
-    private static boolean isContainsOnlyOddDigits(int i) {
+    static boolean isContainsOnlyOddDigits(int i) {
         boolean result = true;
         while (i > 0) {
             int digit = i % 10;

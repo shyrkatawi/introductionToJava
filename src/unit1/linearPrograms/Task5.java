@@ -4,7 +4,7 @@ package unit1.linearPrograms;
  * 5. Дано натуральное число T, которое представляет длительность прошедшего времени в секундах.
  * Вывести данное значение длительности в часах, минутах и секундах в следующей форме: ННч ММмин SSc
  */
-public class Task5 {
+class Task5 {
     public static void main(String[] args) {
         String result = task5(3666);
         System.out.println(result);

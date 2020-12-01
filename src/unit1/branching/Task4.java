@@ -5,7 +5,7 @@ package unit1.branching;
  * 4. Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича.
  * Определить, пройдет ли кирпич через отверстие.
  */
-public class Task4 {
+class Task4 {
     public static void main(String[] args) {
         boolean result = task4(1, 2, 3, 4, 5);
         if (result) {

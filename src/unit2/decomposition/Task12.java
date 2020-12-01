@@ -1,6 +1,6 @@
 package unit2.decomposition;
 
-public class Task12 {
+class Task12 {
     //12. Даны натуральные числа К и N.
     //Написать метод(методы) формирования массива А, элементами которого являются числа, сумма цифр которых равна К и которые не большее N.
     static void task12(int k, int n) {
@@ -19,7 +19,7 @@ public class Task12 {
         Main.showIntArray(resultArray, "Итоговый массив");
     }
 
-    public static int getSumOfDigits(int n) {
+    static int getSumOfDigits(int n) {
         int sum = 0;
         while (n > 0) {
             sum += n % 10;
