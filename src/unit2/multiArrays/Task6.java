@@ -1,7 +1,9 @@
 package unit2.multiArrays;
 
-public class Task6 {
-    //    6. Сформировать квадратную матрицу порядка n по заданному образцу(n - четное):
+/**
+ * 6. Сформировать квадратную матрицу порядка n по заданному образцу(n - четное):
+ */
+class Task6 {
     static void task6(int size) {
         if (size % 2 == 0 && size > 1) {
             int[][] matrix = new int[size][size];
@@ -14,7 +16,7 @@ public class Task6 {
             }
             Main.showMatrix(matrix);
         } else {
-            System.out.println("Неверный размер матрицы, размер должен быть чётным и больше 1");
+            System.out.println("error: size must be even and more than 1");
         }
     }
 }

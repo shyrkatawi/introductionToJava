@@ -1,9 +1,10 @@
 package unit2.multiArrays;
 
-import java.util.Arrays;
-
-public class Task7 {
-//    7. Сформировать квадратную матрицу порядка N по правилу: и подсчитать количество положительных элементов в ней.
+/**
+ * 7. Сформировать квадратную матрицу порядка N по правилу:
+ * и подсчитать количество положительных элементов в ней.
+ */
+class Task7 {
     static void task7(int size) {
         if (size > 1) {
             double[][] matrix = new double[size][size];
@@ -17,9 +18,9 @@ public class Task7 {
                 }
             }
             Main.showMatrix(matrix);
-            System.out.println("Количество положительных элементов "+positiveNumberCounter);
+            System.out.println("Number of positive elements " + positiveNumberCounter);
         } else {
-            System.out.println("Неверный размер матрицы, размер должен быть больше 1");
+            System.out.println("error: size must be even and more than 1");
         }
     }
 }

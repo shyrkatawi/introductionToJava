@@ -46,15 +46,4 @@ public class MethodsUnit2 {
         }
         return copy;
     }
-
-
-    public static void printMatrix(int[][] matrix, String message) {
-        System.out.println(message);
-        for (int[] array : matrix) {
-            for (int i : array) {
-                System.out.print(i + "\t");
-            }
-            System.out.println();
-        }
-    }
 }

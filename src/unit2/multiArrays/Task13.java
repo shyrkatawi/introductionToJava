@@ -1,14 +1,16 @@
 package unit2.multiArrays;
 
-public class Task13 {
-    //    13. Отсотрировать стобцы матрицы по возрастанию и убыванию значений эементов.
+/**
+ * 13. Отсотрировать стобцы матрицы по возрастанию и убыванию значений эементов.
+ */
+class Task13 {
     static void task13(int[][] matrix) {
-        Main.showMatrix(matrix, "Матрица до сортировки");
-        Main.showMatrix(columnsSortUp(matrix), "Матрица после сортировки столбцов по возрастанию элементов");
-        Main.showMatrix(columnsSortDown(matrix), "Матрица после сортировки столбцов по убыванию элементов");
+        Main.showMatrix(matrix, "Matrix before sorting");
+        Main.showMatrix(columnsSortUp(matrix), "Matrix after sorting columns in ascending order of elements");
+        Main.showMatrix(columnsSortDown(matrix), "Matrix after sorting columns in descending order of elements");
     }
 
-    private static int[][] columnsSortUp(int[][] matrix) {
+    static int[][] columnsSortUp(int[][] matrix) {
         for (int i = 0; i < matrix[0].length; i++) {
             boolean isSorted = false;
             int tmp;
@@ -27,7 +29,7 @@ public class Task13 {
         return matrix;
     }
 
-    private static int[][] columnsSortDown(int[][] matrix) {
+    static int[][] columnsSortDown(int[][] matrix) {
         for (int i = 0; i < matrix[0].length; i++) {
             boolean isSorted = false;
             int tmp;

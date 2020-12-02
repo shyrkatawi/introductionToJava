@@ -1,7 +1,9 @@
 package unit2.multiArrays;
 
-public class Task15 {
-    //    15. Найдите наибольший элемент матрицы и заменить все нечетные элементы на него.
+/**
+ * 15. Найдите наибольший элемент матрицы и заменить все нечетные элементы на него.
+ */
+class Task15 {
     static void task15(int[][] matrix) {
         Main.showMatrix(matrix);
         int max = 0;
@@ -16,8 +18,8 @@ public class Task15 {
         for (int i = 0; i < matrix.length; i++) {
             for (int k = 0; k < matrix[i].length; k++) {
                 oddCounter++;
-                if (oddCounter%2!=0){
-                    matrix[i][k]=max;
+                if (oddCounter % 2 != 0) {
+                    matrix[i][k] = max;
                 }
             }
         }
