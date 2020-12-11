@@ -3,14 +3,14 @@ package unit4.classesAndObjects.task10;
 import java.time.DayOfWeek;
 import java.util.Date;
 
-public class Airlines {
-    public final Airline[] airlines;
+class Airlines {
+    final Airline[] airlines;
 
-    public Airlines(Airline[] airlines) {
+    Airlines(Airline[] airlines) {
         this.airlines = airlines;
     }
 
-    public void showAirlinesByDestination(String destination) {
+    void showAirlinesByDestination(String destination) {
         for (Airline airline : airlines) {
             if (airline.getDestination().equals(destination)) {
                 System.out.println(airline);
@@ -19,7 +19,7 @@ public class Airlines {
         System.out.println();
     }
 
-    public void showAirlinesByDay(DayOfWeek day) {
+    void showAirlinesByDay(DayOfWeek day) {
         for (Airline airline : airlines) {
             for (DayOfWeek dayOfWeek : airline.getDaysOfWeek()) {
                 if (day.equals(dayOfWeek)) {
@@ -31,7 +31,7 @@ public class Airlines {
         System.out.println();
     }
 
-    public void showAirlinesByDayAndAfterSpecifiedTime(DayOfWeek day, Date time) {
+    void showAirlinesByDayAndAfterSpecifiedTime(DayOfWeek day, Date time) {
         for (Airline airline : airlines) {
             for (DayOfWeek dayOfWeek : airline.getDaysOfWeek()) {
                 if (day.equals(dayOfWeek)) {
@@ -44,5 +44,4 @@ public class Airlines {
         }
         System.out.println();
     }
-
 }

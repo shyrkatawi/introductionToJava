@@ -8,7 +8,7 @@ import java.util.Random;
  * Создайте массив из десяти элементов такого типа.
  * Добавьте возможность вывода фамилий и номеров групп студентов, имеющих оценки, равные только 9 или 10.
  */
-public class Task3 {
+class Task3 {
     public static void main(String[] args) {
         Student[] students = createRandomStudents(10);
         for (Student st : students) {

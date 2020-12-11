@@ -2,24 +2,24 @@ package unit4.classesAndObjects.task3;
 
 import java.util.Arrays;
 
-public class Student {
+class Student {
     private String surname;
     private String initials;
     private String groupId;
     private int[] performance;
 
-    public Student(String surname, String initials, String groupId, int[] performance) {
+    Student(String surname, String initials, String groupId, int[] performance) {
         this.surname = surname;
         this.initials = initials;
         this.groupId = groupId;
         this.performance = performance;
     }
 
-    public String getSurname() {
+    String getSurname() {
         return surname;
     }
 
-    public String getGroupId() {
+    String getGroupId() {
         return groupId;
     }
 

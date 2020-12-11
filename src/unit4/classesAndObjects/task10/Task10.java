@@ -21,7 +21,7 @@ import java.time.DayOfWeek;
  * b) список рейсов для заданного дня недели;
  * c) список рейсов для заданного дня недели, время вылета для которых больше заданного.
  */
-public class Task10 {
+class Task10 {
     public static void main(String[] args) throws ParseException {
         Airlines airlines = new Airlines(new Airline[]{
                 new Airline("dst1", "1A", "tp1", "11:11", new DayOfWeek[]{DayOfWeek.MONDAY, DayOfWeek.FRIDAY}),

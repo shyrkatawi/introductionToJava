@@ -1,13 +1,13 @@
 package unit4.classesAndObjects.task9;
 
-public class Books {
+class Books {
     private Book[] books;
 
-    public Books(Book[] books) {
+    Books(Book[] books) {
         this.books = books;
     }
 
-    public void showBooksByWriter(String writer) {
+    void showBooksByWriter(String writer) {
         for (Book book : books) {
             String[] writers = book.getWriters();
             for (String s : writers) {
@@ -20,7 +20,7 @@ public class Books {
         System.out.println();
     }
 
-    public void showBooksByPublisher(String publisher) {
+    void showBooksByPublisher(String publisher) {
         for (Book book : books) {
             if (book.getPublisher().equals(publisher)) {
                 System.out.println(book);
@@ -29,7 +29,7 @@ public class Books {
         System.out.println();
     }
 
-    public void showBooksReleasedAfterSpecifiedYear(int year) {
+    void showBooksReleasedAfterSpecifiedYear(int year) {
         for (Book book : books) {
             if (book.getYear() > year) {
                 System.out.println(book);

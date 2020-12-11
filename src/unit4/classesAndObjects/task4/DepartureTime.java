@@ -1,19 +1,19 @@
 package unit4.classesAndObjects.task4;
 
-public class DepartureTime implements Comparable<DepartureTime> {
+class DepartureTime implements Comparable<DepartureTime> {
     private int hours;
     private int minutes;
 
-    public DepartureTime(int hours, int minutes) {
+    DepartureTime(int hours, int minutes) {
         this.hours = hours;
         this.minutes = minutes;
     }
 
-    public int getHours() {
+    int getHours() {
         return hours;
     }
 
-    public int getMinutes() {
+    int getMinutes() {
         return minutes;
     }
 

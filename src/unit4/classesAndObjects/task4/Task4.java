@@ -12,7 +12,7 @@ import java.util.Comparator;
  * Добавьте возможность сортировки массива по пункту назначения,
  * причем поезда с одинаковыми пунктами назначения должны быть упорядочены по времени отправления.
  */
-public class Task4 {
+class Task4 {
     public static void main(String[] args) throws ParseException {
         Train[] trains = new Train[5];
         trains[0] = new Train("af", 1, 11,11);

@@ -2,7 +2,7 @@ package unit4.classesAndObjects.task9;
 
 import java.util.Arrays;
 
-public class Book {
+class Book {
     private static int counter = 1;
     private int id;
     private String name;
@@ -13,7 +13,7 @@ public class Book {
     private int price;
     private String binding;
 
-    public Book(String name, String[] writers, String publisher, int year, int pages, int price, String binding) {
+    Book(String name, String[] writers, String publisher, int year, int pages, int price, String binding) {
         this.id = counter;
         counter++;
         this.name = name;
@@ -25,75 +25,75 @@ public class Book {
         this.binding = binding;
     }
 
-    public static int getCounter() {
+    static int getCounter() {
         return counter;
     }
 
-    public static void setCounter(int counter) {
+    static void setCounter(int counter) {
         Book.counter = counter;
     }
 
-    public int getId() {
+    int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    void setId(int id) {
         this.id = id;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 
-    public String[] getWriters() {
+    String[] getWriters() {
         return writers;
     }
 
-    public void setWriters(String[] writers) {
+    void setWriters(String[] writers) {
         this.writers = writers;
     }
 
-    public String getPublisher() {
+    String getPublisher() {
         return publisher;
     }
 
-    public void setPublisher(String publisher) {
+    void setPublisher(String publisher) {
         this.publisher = publisher;
     }
 
-    public int getYear() {
+    int getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    void setYear(int year) {
         this.year = year;
     }
 
-    public int getPages() {
+    int getPages() {
         return pages;
     }
 
-    public void setPages(int pages) {
+    void setPages(int pages) {
         this.pages = pages;
     }
 
-    public int getPrice() {
+    int getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    void setPrice(int price) {
         this.price = price;
     }
 
-    public String getBinding() {
+    String getBinding() {
         return binding;
     }
 
-    public void setBinding(String binding) {
+    void setBinding(String binding) {
         this.binding = binding;
     }
 

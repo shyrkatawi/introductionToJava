@@ -7,7 +7,7 @@ package unit4.classesAndObjects.task6;
  * В случае недопустимых значений полей поле устанавливается в значение 0.
  * Создать методы изменения времени на заданное количество часов, минут и секунд.
  */
-public class Task6 {
+class Task6 {
     public static void main(String[] args) {
         Time time = new Time(1, 3, 55);
         System.out.println(time);

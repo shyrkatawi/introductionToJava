@@ -1,6 +1,6 @@
 package unit4.classesAndObjects.task8;
 
-public class Customer {
+class Customer {
     private static int idCounter = 1;
     private final int id;
     private String lastName;
@@ -10,7 +10,7 @@ public class Customer {
     private long creditCardNumber;
     private long bankAccountNumber;
 
-    public Customer(String lastName, String firstName, String middleName, String address, long creditCardNumber, long bankAccountNumber) {
+    Customer(String lastName, String firstName, String middleName, String address, long creditCardNumber, long bankAccountNumber) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.middleName = middleName;
@@ -21,55 +21,55 @@ public class Customer {
         idCounter++;
     }
 
-    public int getId() {
+    int getId() {
         return id;
     }
 
-    public String getLastName() {
+    String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public String getFirstName() {
+    String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
+    void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public String getMiddleName() {
+    String getMiddleName() {
         return middleName;
     }
 
-    public void setMiddleName(String middleName) {
+    void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
 
-    public String getAddress() {
+    String getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    void setAddress(String address) {
         this.address = address;
     }
 
-    public long getCreditCardNumber() {
+    long getCreditCardNumber() {
         return creditCardNumber;
     }
 
-    public void setCreditCardNumber(long creditCardNumber) {
+    void setCreditCardNumber(long creditCardNumber) {
         this.creditCardNumber = creditCardNumber;
     }
 
-    public long getBankAccountNumber() {
+    long getBankAccountNumber() {
         return bankAccountNumber;
     }
 
-    public void setBankAccountNumber(long bankAccountNumber) {
+    void setBankAccountNumber(long bankAccountNumber) {
         this.bankAccountNumber = bankAccountNumber;
     }
 

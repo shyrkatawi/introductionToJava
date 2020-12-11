@@ -20,7 +20,7 @@ package unit4.classesAndObjects.task9;
  * c) список книг, выпущенных после заданного года.
  */
 
-public class Task9 {
+class Task9 {
     public static void main(String[] args) {
         Books books = new Books(new Book[]{
                 new Book("name1", new String[]{"wrtr1","wrtr2"},"pub1",1111,11,1,"da"),

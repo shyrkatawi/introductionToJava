@@ -4,7 +4,7 @@ package unit4.classesAndObjects.task7;
  * 7. Описать класс, представляющий треугольник.
  * Предусмотреть методы для создания объектов, вычисления площади, периметра и точки пересечения медиан.
  */
-public class Task7 {
+class Task7 {
     public static void main(String[] args) {
         Point p1 = new Point(1, 1);
         Point p2 = new Point(2, 3);

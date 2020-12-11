@@ -8,7 +8,7 @@ package unit4.classesAndObjects.task5;
  * Счетчик имеет методы увеличения и уменьшения состояния, и метод позволяющее получить его текущее состояние.
  * Написать код, демонстрирующий все возможности класса.
  */
-public class Task5 {
+class Task5 {
     public static void main(String[] args) {
         Counter counter1 = new Counter();
         System.out.println(counter1);

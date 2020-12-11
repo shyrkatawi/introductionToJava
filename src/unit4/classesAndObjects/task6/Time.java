@@ -1,17 +1,17 @@
 package unit4.classesAndObjects.task6;
 
-public class Time {
+class Time {
     private int hour;
     private int minute;
     private int second;
 
-    public Time(int hour, int minute, int second) {
+    Time(int hour, int minute, int second) {
         setHour(hour);
         setMinute(minute);
         setSecond(second);
     }
 
-    public void setHour(int hour) {
+    void setHour(int hour) {
         if (hour < 0 || hour > 23) {
             this.hour = 0;
         } else {
@@ -19,7 +19,7 @@ public class Time {
         }
     }
 
-    public void setMinute(int minute) {
+    void setMinute(int minute) {
         if (minute < 0 || minute > 59) {
             this.minute = 0;
         } else {
@@ -27,7 +27,7 @@ public class Time {
         }
     }
 
-    public void setSecond(int second) {
+    void setSecond(int second) {
         if (second < 0 || second > 59) {
             this.second = 0;
         } else {
@@ -35,7 +35,7 @@ public class Time {
         }
     }
 
-    public void changeTime(int hour, int minute, int second) {
+    void changeTime(int hour, int minute, int second) {
         int currentTimeInSeconds = this.hour * 3600 + this.minute * 60 + this.second;
         int additionalTimeInSeconds = hour * 3600 + minute * 60 + second;
         setTimeFromSeconds(currentTimeInSeconds + additionalTimeInSeconds);

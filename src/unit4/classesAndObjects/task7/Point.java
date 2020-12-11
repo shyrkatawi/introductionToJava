@@ -1,19 +1,19 @@
 package unit4.classesAndObjects.task7;
 
-public class Point {
+class Point {
     private final double x;
     private final double y;
 
-    public Point(double x, double y) {
+    Point(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public double getX() {
+    double getX() {
         return x;
     }
 
-    public double getY() {
+    double getY() {
         return y;
     }
 

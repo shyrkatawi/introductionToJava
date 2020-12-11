@@ -17,7 +17,7 @@ package unit4.classesAndObjects.task8;
  * a) список покупателей в алфавитном порядке;
  * b) список покупателей, у которых номер кредитной карточки находится в заданном интервале
  */
-public class Task8 {
+class Task8 {
     public static void main(String[] args) {
         Customers customers = new Customers(
                 new Customer("adf", "firstName1", "middleName1",

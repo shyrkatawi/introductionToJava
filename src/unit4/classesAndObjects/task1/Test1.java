@@ -6,15 +6,15 @@ package unit4.classesAndObjects.task1;
  * Добавьте метод, который находит сумму значений этих переменных,
  * и метод, который находит наибольшее значение из этих двух переменных.
  */
-public class Test1 {
+class Test1 {
     int a = 1;
     int b = 2;
 
-    public void setA(int a) {
+    void setA(int a) {
         this.a = a;
     }
 
-    public void setB(int b) {
+    void setB(int b) {
         this.b = b;
     }
 

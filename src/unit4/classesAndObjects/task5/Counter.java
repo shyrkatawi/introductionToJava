@@ -1,23 +1,23 @@
 package unit4.classesAndObjects.task5;
 
-public class Counter {
+class Counter {
     private int minValue;
     private int currentValue;
     private int maxValue;
 
-    public Counter() {
+    Counter() {
         this.minValue = 0;
         this.currentValue = 0;
         this.maxValue = 10;
     }
 
-    public Counter(int minValue, int currentValue, int maxValue) {
+    Counter(int minValue, int currentValue, int maxValue) {
         this.minValue = minValue;
         this.currentValue = currentValue;
         this.maxValue = maxValue;
     }
 
-    public int getCurrentValue() {
+    int getCurrentValue() {
         return currentValue;
     }
 

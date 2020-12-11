@@ -1,6 +1,6 @@
 package unit4.classesAndObjects.task7;
 
-public class Triangle {
+class Triangle {
     private final Point a;
     private final Point b;
     private final Point c;
@@ -8,7 +8,7 @@ public class Triangle {
     private final double sideB;
     private final double sideC;
 
-    public Triangle(Point a, Point b, Point c) {
+    Triangle(Point a, Point b, Point c) {
         this.a = a;
         this.b = b;
         this.c = c;
@@ -17,18 +17,18 @@ public class Triangle {
         this.sideC = Math.sqrt(Math.pow((c.getX() - a.getX()), 2) + Math.pow((c.getY() - a.getY()), 2));
     }
 
-    public double getPerimeter() {
+    double getPerimeter() {
         return sideA + sideB + sideC;
     }
 
-    public double getArea() {
+    double getArea() {
         return Math.sqrt((getPerimeter() / 2)
                 * ((getPerimeter() / 2) - sideA)
                 * ((getPerimeter() / 2) - sideB)
                 * ((getPerimeter() / 2) - sideC));
     }
 
-    public Point getMedian() {
+    Point getMedian() {
         double x = (a.getX() + b.getX() + c.getX()) / 3;
         double y = (a.getY() + b.getY() + c.getY()) / 3;
         return new Point(x, y);
